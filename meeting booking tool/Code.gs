@@ -48,7 +48,7 @@ function submitRoutine(e){
 // Performs the actual booking in the calendar
 function bookTime(booking,scriptProps){
   var calendar = scriptProps.getProperty("calendarID");
-  var supervisorID = scriptProps.getProperties("supervisorID");
+  var supervisorID = scriptProps.getProperty("supervisorID");
   var event = Calendar.Events.get(calendar, booking["Event ID"].slice(0,-11));
   var pa = {
  "summary": "Meeting with " + booking["Name"],
