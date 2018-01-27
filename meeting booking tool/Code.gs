@@ -68,7 +68,7 @@ function cleaning(){
   var scriptProps =PropertiesService.getScriptProperties();
   //Weekly Meetings
   //search string for meetings
-  var weeklyMeetingNAME = scriptProps.getProperty("weeklymeetingname");
+  var weeklyMeetingNAME = scriptProps.getProperty("meetingName");
 
   // List of events from calendar
   var calEvents = getCalEvents(weeklyMeetingNAME,1);
