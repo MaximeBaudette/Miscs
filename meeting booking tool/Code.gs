@@ -92,7 +92,7 @@ function updateEventList(){
   var weeklyMeetingID = scriptProps.getProperty("questionID");
 
   //search string for weekly meetings
-  var weeklyMeetingNAME = scriptProps.getProperty("weeklymeetingname");
+  var weeklyMeetingNAME = scriptProps.getProperty("meetingName");
 
   updateQuestionForm(weeklyMeetingID, buffer, "av_Weekly_Meeting", weeklyMeetingNAME)
 
